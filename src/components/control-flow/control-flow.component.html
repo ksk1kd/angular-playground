@@ -1,0 +1,32 @@
+<h1>Control Flow</h1>
+
+<div>
+  <span>Age: </span>
+  @if (age > 20) {
+    <span>Adult</span>
+  }
+  @else {
+    <span>Child</span>
+  }
+</div>
+
+<div>
+  <span>Hobby: </span>
+  @for (hobby of hobbies; track $index) {
+    <span>{{ hobby }}</span>
+  } @empty {
+    <span>No hobbies.</span>
+  }
+</div>
+
+<div>
+  <span>Job: </span>
+  @switch (job) {
+    @case ('enginner') {
+      Enginner 🧑‍💻
+    }
+    @case ('writer') {
+      Writer 🖌️
+    }
+  }
+</div>
