@@ -6,5 +6,5 @@ import { TopPage } from './pages/top/top-page.component';
 export const routes: Routes = [
   { path: '', component: TopPage },
   { path: 'blog', component: BlogListPage },
-  { path: 'blog/detail', component: BlogDetailPage },
+  { path: 'blog/:id', component: BlogDetailPage },
 ];
