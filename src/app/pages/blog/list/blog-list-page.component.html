@@ -1,1 +1,7 @@
 <h1>Blog List</h1>
+
+<ul>
+  @for (item of [1, 2, 3, 4, 5]; track $index) {
+    <li><a routerLink="/blog/{{ item }}">Blog {{ item }}</a></li>
+  }
+</ul>
